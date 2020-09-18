@@ -30,9 +30,11 @@ function Sidebar({ setRoomId, setCurrentRoomName, user }) {
   // Add a new room
   const addRoom = () => {
     const input = prompt("Enter the room name");
-    db.collection("room").add({
-      name: input,
-    });
+    if (input) {
+      db.collection("room").add({
+        name: input,
+      });
+    }
   };
 
   return (
