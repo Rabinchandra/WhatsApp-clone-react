@@ -293,7 +293,7 @@ a {
 @media (max-width: 1000px) {
   .main {
     width: 90%;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
@@ -309,5 +309,9 @@ a {
 
   .chat {
     height: 90vh;
+  }
+
+  .msg-send__box input {
+    flex: 0.5;
   }
 }
